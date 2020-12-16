@@ -1,0 +1,36 @@
+.cardTitle, .cardTitle .MuiTypography-h5 {
+   font-family: header !important;
+   color: #007360;
+}
+
+.cardSubtitle, .KPI, .cardCaption {
+   font-family: accent !important;
+   color: #3c3c3d;
+}
+
+#dashboardTitleContainer {
+   display: block;
+   margin: 0px 0px -15px 0px;
+}
+
+#dashboardTitle, #dashboardSubTitle {
+   color: #3c3c3d;
+}
+
+#dashboardTitle {
+   display: inline;
+   font-family: accent !important;
+   font-size: 1.3em;
+   font-weight: 700;
+   float: left;
+   margin-left: 3px;
+}
+
+#dashboardSubTitle {
+   display: inline;
+   font-family: accent-light !important;
+   font-size: 1.3em;
+   font-weight: 700;
+   float: right;
+   margin-right: 15px;
+}
