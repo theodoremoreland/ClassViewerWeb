@@ -1,0 +1,26 @@
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+    width: 250px;
+    height: 250px;
+    overflow-wrap: break-word;
+    -webkit-box-shadow: 1px 1px 5px -1px #000000; 
+    box-shadow: 1px 1px 5px -1px #000000;
+    transition: transform 330ms ease-in-out;
+}
+
+.cardContainer:hover {
+    transform: translateY(-20px);
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: snow;
+}
