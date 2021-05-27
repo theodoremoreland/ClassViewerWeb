@@ -25,6 +25,12 @@
     text-align: center;  
 }
 
+.icon {
+ margin-bottom: 8px;
+ transition: transform 230ms ease-in-out;;
+}
+
 .icon:hover {
     fill: #5C93CE;
+    transform: scale(1.2);
 }
