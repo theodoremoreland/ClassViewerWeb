@@ -1,0 +1,28 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: accent;
+    background-color: #344A5F;
+    color: #ffff;
+}
+
+.panelHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    font-family: header;
+}
+
+.panelTitle {
+    text-align: center;  
+}
+
+.icon:hover {
+    fill: #5C93CE;
+}
