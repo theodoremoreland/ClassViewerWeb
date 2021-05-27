@@ -8,6 +8,8 @@
     font-family: accent;
     background-color: #344A5F;
     color: #ffff;
+    -webkit-box-shadow: 3px 0px 4px 0px rgba(0,0,0,0.2); 
+    box-shadow: 3px 0px 4px 0px rgba(0,0,0,0.2);
 }
 
 .panelHeader {
