@@ -1,12 +1,14 @@
 .cardContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: violet;
     width: 250px;
     height: 250px;
+    margin: 10px;
     overflow-wrap: break-word;
     -webkit-box-shadow: 1px 1px 5px -1px #000000; 
     box-shadow: 1px 1px 5px -1px #000000;
@@ -18,9 +20,11 @@
 }
 
 h1 {
+    font-family: header;
     color: white;
 }
 
 h3 {
+    font-family: accent;
     color: snow;
 }
