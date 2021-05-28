@@ -1,9 +1,12 @@
 // React
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Components
 import Panel from './components/Panel';
 import Card from './components/Card';
+
+// api calls
+import getCourses from './api/getCourses';
 
 // Icons
 import { GiCalendar
@@ -16,17 +19,31 @@ import { GiCalendar
 // Styles
 import './App.css';
 
+interface c {
+  id: number
+  type: string
+}
+
 function App() {
+  const [courses, setCourses] = useState<Array<c>>([]);
+
+  useEffect(() => {
+    getCourses("http://localhost:3001/courses")
+      .then(s => setCourses(s));
+  }, []);
+  
+
   return (
     <>
       <div id="controlPanelContainer">
         <Panel title="Class Viewer Web" icons={[ GiHouse, GiHood, GiCalendar, GiMailbox, GiExitDoor]} />
       </div>
       <div id="contentContainer">
-        <Card title="Unit 1 - JavaScript" subtitle="Lc101 2021"/>
-        <Card title="Unit 2 - Java" subtitle="Lc101 2021"/>
-        <Card title="Unit 1 - Python" subtitle="Lc101 2018"/>
-        <Card title="Unit 2 - Java" subtitle="Lc101 2018"/>
+        {
+          courses[0] !== undefined
+            ? courses.map((course) => <Card key={course.id} title={course.type} subtitle=""/>)
+            : ""
+        }
       </div>
     </>
   );
