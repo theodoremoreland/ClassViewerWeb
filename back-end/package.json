@@ -1,0 +1,16 @@
+{
+  "name": "class-viewer-web-back-end",
+  "version": "1.0.0",
+  "description": "Express.js server for Class Viewer Web",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Theodore Moreland",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
