@@ -1,9 +1,12 @@
 // React
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // Components
 import Panel from './components/Panel';
-import Card from './components/Card';
+
+// Views
+import CoursesView from './views/Courses';
 
 // Icons
 import { GiCalendar
@@ -17,17 +20,19 @@ import { GiCalendar
 import './App.css';
 
 function App() {
+
   return (
     <>
-      <div id="controlPanelContainer">
-        <Panel title="Class Viewer Web" icons={[ GiHouse, GiHood, GiCalendar, GiMailbox, GiExitDoor]} />
-      </div>
-      <div id="contentContainer">
-        <Card title="Unit 1 - JavaScript" subtitle="Lc101 2021"/>
-        <Card title="Unit 2 - Java" subtitle="Lc101 2021"/>
-        <Card title="Unit 1 - Python" subtitle="Lc101 2018"/>
-        <Card title="Unit 2 - Java" subtitle="Lc101 2018"/>
-      </div>
+      <BrowserRouter>
+        <div id="controlPanelContainer">
+          <Panel title="Class Viewer Web" icons={[ GiHouse, GiHood, GiCalendar, GiMailbox, GiExitDoor]} />
+        </div>
+        <div id="contentContainer">
+          <Switch>
+            <Route path="/" component={CoursesView}/>
+          </Switch>
+        </div>
+      </BrowserRouter>
     </>
   );
 }
