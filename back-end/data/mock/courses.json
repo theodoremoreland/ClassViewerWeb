@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "type": "Lc101",
+        "isActive": true
+    },
+    {
+        "id": 2,
+        "type": "CoderGirl",
+        "isActive": true
+    },
+    {
+        "id": 3,
+        "type": "CodeCamp",
+        "isActive": true
+    },
+    {
+        "id": 4,
+        "type": "Independent Learners",
+        "isActive": true
+    },
+    {
+        "id": 5,
+        "type": "CS50",
+        "isActive": false
+    },
+    {
+        "id": 6,
+        "type": "Lift Off",
+        "isActive": true
+    }
+]

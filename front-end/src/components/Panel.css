@@ -1,0 +1,37 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: accent;
+    color: #ffff;
+    background: rgb(60,91,121);
+    background: linear-gradient(45deg, rgba(60,91,121,1) 0%, rgba(52,74,95,1) 50%, rgba(60,91,121,1) 100%);
+    -webkit-box-shadow: 3px 0px 4px 0px rgba(0,0,0,0.2); 
+    box-shadow: 3px 0px 4px 0px rgba(0,0,0,0.2);
+}
+
+.panelHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    font-family: header;
+}
+
+.panelTitle {
+    text-align: center;  
+}
+
+.icon {
+ margin-bottom: 8px;
+ transition: transform 230ms ease-in-out;;
+}
+
+.icon:hover {
+    fill: #5C93CE;
+    transform: scale(1.2);
+}
