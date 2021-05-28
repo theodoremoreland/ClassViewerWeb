@@ -1,5 +1,5 @@
+// React
 import React from 'react';
-
 
 // Components
 import Panel from './components/Panel';
