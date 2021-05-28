@@ -6,8 +6,9 @@
     height: 100%;
     width: 100%;
     font-family: accent;
-    background-color: #344A5F;
     color: #ffff;
+    background: rgb(60,91,121);
+    background: linear-gradient(45deg, rgba(60,91,121,1) 0%, rgba(52,74,95,1) 50%, rgba(60,91,121,1) 100%);
     -webkit-box-shadow: 3px 0px 4px 0px rgba(0,0,0,0.2); 
     box-shadow: 3px 0px 4px 0px rgba(0,0,0,0.2);
 }

@@ -17,7 +17,7 @@ const Panel: FunctionComponent<PanelProps> = ({ title, icons }) => {
     <div className="panel">
         <h3 className="panelTitle">{title}</h3>
       {
-        icons.map((Icon) => <div><Icon className="icon" size={42}/></div>)
+        icons.map((Icon) => <div><Icon className="icon" size={40}/></div>)
       }
     </div>
   )
