@@ -1,7 +1,62 @@
 [
     {
+        "id": 300,
         "name": "John Jacob",
-        "student_id": 300,
-        "status": true
+        "status": "active"
+    },
+    {
+        "id": 301,
+        "name": "Alex Mann",
+        "status": "active"
+    },
+    {
+        "id": 302,
+        "name": "Tiny Tina",
+        "status": "active"
+    },
+    {
+        "id": 303,
+        "name": "Markov Jahovski",
+        "status": "active"
+    },
+    {
+        "id": 304,
+        "name": "Damon Kris",
+        "status": "active"
+    },
+    {
+        "id": 305,
+        "name": "Timothy Nicks",
+        "status": "active"
+    },
+    {
+        "id": 306,
+        "name": "Alan Watts",
+        "status": "active"
+    },
+    {
+        "id": 307,
+        "name": "Bernard Riddle",
+        "status": "active"
+    },
+    {
+        "id": 308,
+        "name": "Tyler Hov",
+        "status": "active"
+    },
+    {
+        "id": 309,
+        "name": "Christine Jacob",
+        "status": "active"
+    }
+    {
+        "id": 310,
+        "name": "Riley Smith",
+        "status": "active"
+    },
+    {
+        "id": 1,
+        "name": "Chloe Moore",
+        "status": "graduate"
     }
 ]
