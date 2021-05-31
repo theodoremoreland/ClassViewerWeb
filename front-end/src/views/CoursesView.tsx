@@ -1,8 +1,8 @@
 // React
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ReactElement } from 'react';
 
 // Components
-import Card from '../components/Card';
+import Card from '../components/Cards/CourseCard';
 
 // api calls
 import getCourses from '../api/getCourses';
@@ -12,7 +12,7 @@ interface ICourse {
   type: string
 }
 
-function CoursesView() {
+function CoursesView() : ReactElement {
   const [courses, setCourses] = useState<Array<ICourse>>([]);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function CoursesView() {
     <>
         {
           courses[0] !== undefined
-            ? courses.map((course) => <Card key={course.id} title={course.type} subtitle=""/>)
+            ? courses.map((course) => <Card key={course.id} id={course.id} title={course.type} subtitle=""/>)
             : ""
         }
     </>

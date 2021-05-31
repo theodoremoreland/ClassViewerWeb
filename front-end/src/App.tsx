@@ -6,7 +6,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Panel from './components/Panel';
 
 // Views
-import CoursesView from './views/Courses';
+import CoursesView from './views/CoursesView';
+import CohortsView from './views/CohortsView';
 
 // Icons
 import { GiCalendar
@@ -29,7 +30,8 @@ function App() {
         </div>
         <div id="contentContainer">
           <Switch>
-            <Route path="/" component={CoursesView}/>
+            <Route exact path="/" component={CoursesView}/>
+            <Route exact path="/cohorts" component={CohortsView} /> 
           </Switch>
         </div>
       </BrowserRouter>
