@@ -2,7 +2,7 @@
 import React, { useState, useEffect, ReactElement } from 'react';
 
 // Components
-import CohortCard from '../components/Cards/CohortCard';
+import Card from '../components/Card';
 
 // api calls
 import getCohorts from '../api/getCohorts';
@@ -13,7 +13,7 @@ interface ICohort {
 }
 
 function CohortsView({ location } : any) : ReactElement {
-  const [courseID, setCourseID] = useState<number>();
+  // TODO sort cohorts by start date.
   const [cohorts, setCohorts] = useState<Array<ICohort>>([]);
 
   useEffect(() => {
@@ -21,7 +21,6 @@ function CohortsView({ location } : any) : ReactElement {
     const courseIDRegEx = /(?<=course_id=).+$/;
     const courseID = q.match(courseIDRegEx)[0];
 
-    setCourseID(parseInt(courseID));
     getCohorts(`http://localhost:3001/cohorts?course_id=${courseID}`)
       .then(s => setCohorts(s));
     // eslint-disable-next-line
@@ -31,7 +30,15 @@ function CohortsView({ location } : any) : ReactElement {
     <>
         {
           cohorts[0] !== undefined
-            ? cohorts.map((cohort) => <CohortCard key={cohort.id} id={courseID} title={cohort.name} subtitle=""/>)
+            ? cohorts.map((cohort) => 
+                    <Card
+                        key={cohort.id}
+                        cardType={"cohortCard"}
+                        link={`/units?cohort_id=${cohort.id}`}
+                        title={cohort.name}
+                        subtitle=""
+                    />
+                )
             : ""
         }
     </>
