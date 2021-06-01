@@ -39,12 +39,12 @@
     background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
 }
 
-h1 {
+.cardHeader h1 {
     font-family: header;
     color: white;
 }
 
-h3 {
+.cardHeader h3 {
     font-family: accent;
     color: snow;
 }
