@@ -48,6 +48,7 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
