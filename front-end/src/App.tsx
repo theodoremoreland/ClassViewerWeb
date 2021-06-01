@@ -8,6 +8,8 @@ import Panel from './components/Panel';
 // Views
 import CoursesView from './views/CoursesView';
 import CohortsView from './views/CohortsView';
+import UnitsView from './views/UnitsView';
+import StudentsView from './views/StudentsView';
 
 // Icons
 import { GiCalendar
@@ -31,7 +33,9 @@ function App() {
         <div id="contentContainer">
           <Switch>
             <Route exact path="/" component={CoursesView}/>
-            <Route exact path="/cohorts" component={CohortsView} /> 
+            <Route exact path="/cohorts" component={CohortsView} />
+            <Route exact path="/units" component={UnitsView} />
+            <Route exact path="/students" component={StudentsView} />
           </Switch>
         </div>
       </BrowserRouter>
