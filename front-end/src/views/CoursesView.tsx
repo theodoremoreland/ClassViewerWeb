@@ -1,5 +1,5 @@
 // React
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ReactElement } from 'react';
 
 // Components
 import Card from '../components/Card';
@@ -12,7 +12,7 @@ interface ICourse {
   type: string
 }
 
-function CoursesView() {
+function CoursesView() : ReactElement {
   const [courses, setCourses] = useState<Array<ICourse>>([]);
 
   useEffect(() => {
@@ -24,7 +24,15 @@ function CoursesView() {
     <>
         {
           courses[0] !== undefined
-            ? courses.map((course) => <Card key={course.id} title={course.type} subtitle=""/>)
+            ? courses.map((course) =>
+                    <Card
+                        key={course.id}
+                        cardType="courseCard"
+                        link={`/cohorts?course_id=${course.id}`}
+                        title={course.type}
+                        subtitle=""
+                    />
+                )
             : ""
         }
     </>
