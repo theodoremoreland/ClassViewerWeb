@@ -28,6 +28,9 @@ function StudentsView({ location } : any) : ReactElement {
   
   return (
     <>
+        <div style={{width: "100%", textAlign: "center", marginTop: "-50px"}} className="viewHeaderContainer">
+            <h1 className="viewHeader">Students</h1>
+        </div>
         {
           students[0] !== undefined
             ? students.map((student) => 

@@ -22,6 +22,9 @@ function CoursesView() : ReactElement {
   
   return (
     <>
+        <div style={{width: "100%", textAlign: "center", marginTop: "-50px"}} className="viewHeaderContainer">
+            <h1 className="viewHeader">Courses</h1>
+        </div>
         {
           courses[0] !== undefined
             ? courses.map((course) =>

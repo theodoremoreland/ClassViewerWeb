@@ -28,6 +28,9 @@ function UnitsView({ location } : any) : ReactElement {
   
   return (
     <>
+        <div style={{width: "100%", textAlign: "center", marginTop: "-50px"}} className="viewHeaderContainer">
+            <h1 className="viewHeader">Units</h1>
+        </div>
         {
           units[0] !== undefined
             ? units.map((unit) => 
