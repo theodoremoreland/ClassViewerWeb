@@ -12,15 +12,24 @@ import UnitsView from './views/UnitsView';
 import StudentsView from './views/StudentsView';
 
 // Icons
-import { GiCalendar
-  , GiMailbox
-  , GiHood
-  , GiExitDoor
-  , GiHouse
-} from "react-icons/gi"; 
+import {
+    GoPerson
+    , GoInbox
+    , GoCalendar
+    , GoSignOut
+    , GoHome
+}  from "react-icons/go"
 
 // Styles
 import './App.css';
+
+const icons = [
+    {img: GoHome, label: "Home"}
+    , {img: GoPerson, label: "Profile"}
+    , {img: GoCalendar, label: "Calendar"}
+    , {img: GoInbox, label: "Inbox"}
+    , {img: GoSignOut, label: "Sign out"} 
+];
 
 function App() {
 
@@ -28,7 +37,9 @@ function App() {
     <>
       <BrowserRouter>
         <div id="controlPanelContainer">
-          <Panel title="Class Viewer Web" icons={[ GiHouse, GiHood, GiCalendar, GiMailbox, GiExitDoor]} />
+          <Panel
+          title="Class Viewer Web"
+          icons={icons} />
         </div>
         <div id="contentContainer">
           <Switch>

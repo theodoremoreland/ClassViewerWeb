@@ -26,12 +26,21 @@
     text-align: center;  
 }
 
-.icon {
- margin-bottom: 8px;
- transition: transform 230ms ease-in-out;;
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    transition: transform 230ms ease-in-out;;
 }
 
-.icon:hover {
-    fill: #5C93CE;
+.iconContainer > h4 {
+    margin: 0;
+    font-size: small;
+}
+
+.iconContainer:hover {
+    /* fill: #5C93CE; */
     transform: scale(1.2);
 }
