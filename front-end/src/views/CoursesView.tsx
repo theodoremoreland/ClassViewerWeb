@@ -22,7 +22,7 @@ function CoursesView() : ReactElement {
   
   return (
     <>
-        <div style={{width: "100%", textAlign: "center", marginTop: "-50px"}} className="viewHeaderContainer">
+        <div className="viewHeaderContainer">
             <h1 className="viewHeader">Courses</h1>
         </div>
         {

@@ -28,7 +28,7 @@ function CohortsView({ location } : any) : ReactElement {
   
   return (
     <>
-        <div style={{width: "100%", textAlign: "center", marginTop: "-50px"}} className="viewHeaderContainer">
+        <div className="viewHeaderContainer">
             <h1 className="viewHeader">Cohorts</h1>
         </div>
         {
