@@ -2,6 +2,9 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 
+// Styles
+import './StudentCard.styles.css';
+
 const StudentCard: FunctionComponent<ICard> = ({ link, title, subtitle, key }) : ReactElement => {
 
     return (
