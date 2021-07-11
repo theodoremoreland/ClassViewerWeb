@@ -22,6 +22,8 @@
     src: url('./fonts/Exo2/Exo2-Thin.ttf');
 }
 
+/* ___________________ PAGE ____________________________ */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -58,4 +60,37 @@ html, body {
 .viewHeaderContainer {
     width: 100%; 
     text-align: center;
+    font-family: header;
+}
+
+/* ___________________ CARD ____________________________ */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    overflow-wrap: break-word;
+    -webkit-box-shadow: 1px 1px 5px -1px #000000; 
+    box-shadow: 1px 1px 5px -1px #000000;
+    transition: transform 330ms ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.cardTitle {
+    font-family: header;
+    color: white;
+}
+
+.cardSubtitle {
+    font-family: accent;
+    color: snow;
 }
