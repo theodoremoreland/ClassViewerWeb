@@ -2,7 +2,7 @@
 import React, { useState, useEffect, ReactElement } from 'react';
 
 // Components
-import Card from '../components/Card';
+import CohortCard from '../components/Cards/CohortCard';
 
 // api calls
 import getCohorts from '../api/getCohorts';
@@ -34,9 +34,8 @@ function CohortsView({ location } : any) : ReactElement {
         {
           cohorts[0] !== undefined
             ? cohorts.map((cohort) => 
-                    <Card
+                    <CohortCard
                         key={cohort.id}
-                        cardType={"cohortCard"}
                         link={`/units?cohort_id=${cohort.id}`}
                         title={cohort.name}
                         subtitle=""
