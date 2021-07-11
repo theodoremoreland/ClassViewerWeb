@@ -2,7 +2,7 @@
 import React, { useState, useEffect, ReactElement } from 'react';
 
 // Components
-import Card from '../components/Card';
+import CourseCard from '../components/Cards/CourseCard';
 
 // api calls
 import getCourses from '../api/getCourses';
@@ -22,12 +22,14 @@ function CoursesView() : ReactElement {
   
   return (
     <>
+        <div className="viewHeaderContainer">
+            <h1 className="viewHeader">Courses</h1>
+        </div>
         {
           courses[0] !== undefined
             ? courses.map((course) =>
-                    <Card
+                    <CourseCard
                         key={course.id}
-                        cardType="courseCard"
                         link={`/cohorts?course_id=${course.id}`}
                         title={course.type}
                         subtitle=""

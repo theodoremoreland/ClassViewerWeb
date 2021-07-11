@@ -2,7 +2,7 @@
 import React, { useState, useEffect, ReactElement } from 'react';
 
 // Components
-import Card from '../components/Card';
+import StudentCard from '../components/Cards/StudentCard';
 
 // api calls
 import getStudents from '../api/getStudents';
@@ -28,12 +28,14 @@ function StudentsView({ location } : any) : ReactElement {
   
   return (
     <>
+        <div className="viewHeaderContainer">
+            <h1 className="viewHeader">Students</h1>
+        </div>
         {
           students[0] !== undefined
             ? students.map((student) => 
-                    <Card
+                    <StudentCard
                         key={student.id}
-                        cardType={"studentCard"}
                         link={``}
                         title={student.name}
                         subtitle=""

@@ -39,7 +39,7 @@ html, body {
 
 #controlPanelContainer {
     height: 100%;
-    width: 80px;
+    width: 90px;
     order: 1;
 }
 
@@ -48,10 +48,14 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     align-items: center;
     height: 100%;
     width: 100%;
     order: 2;
-    gap: 0px;
+}
+
+.viewHeaderContainer {
+    width: 100%; 
+    text-align: center;
 }
